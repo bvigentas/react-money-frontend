@@ -6,8 +6,8 @@ import Billing from '../billingCycle/billingCycle';
 
 export default props => (
     <HashRouter>
-        <Route path="/" component={Dashboard}/>
+        <Route exact path="/" component={Dashboard}/>
         <Route path="/billingCycles" component={Billing}/>
-        <Redirect from="*" to="/dash"/>
+        <Redirect from="*" to="/"/>
     </HashRouter>
 )
